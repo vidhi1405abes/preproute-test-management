@@ -33,7 +33,9 @@ export function CreateTestPage() {
 
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
-
+const [testType, setTestType] = useState<"chapterwise" | "pyq" | "mock">(
+  "chapterwise"
+);
   useEffect(() => {
     async function loadSubjects() {
       try {
@@ -107,7 +109,7 @@ export function CreateTestPage() {
 
       const response = await createTest({
         name,
-        type: "chapterwise",
+        type: testType,
         subject: subjectId,
         topics: [topicId],
         sub_topics: subTopicId ? [subTopicId] : [],
@@ -143,19 +145,42 @@ export function CreateTestPage() {
 
       <form onSubmit={handleSubmit} className="mt-6 max-w-[1120px]">
         <div className="mb-5 flex h-[34px] w-fit rounded-[6px] border border-[#e5e7eb] p-1 text-[11px]">
-          <button
-            type="button"
-            className="rounded-[4px] bg-[#eef3ff] px-4 text-[#4f73df]"
-          >
-            Chapter Wise
-          </button>
-          <button type="button" className="px-4 text-[#98a2b3]">
-            PYQ
-          </button>
-          <button type="button" className="px-4 text-[#98a2b3]">
-            Mock Test
-          </button>
-        </div>
+  <button
+    type="button"
+    onClick={() => setTestType("chapterwise")}
+    className={`rounded-[4px] px-4 ${
+      testType === "chapterwise"
+        ? "bg-[#eef3ff] text-[#4f73df]"
+        : "text-[#98a2b3]"
+    }`}
+  >
+    Chapter Wise
+  </button>
+
+  <button
+    type="button"
+    onClick={() => setTestType("pyq")}
+    className={`rounded-[4px] px-4 ${
+      testType === "pyq"
+        ? "bg-[#eef3ff] text-[#4f73df]"
+        : "text-[#98a2b3]"
+    }`}
+  >
+    PYQ
+  </button>
+
+  <button
+    type="button"
+    onClick={() => setTestType("mock")}
+    className={`rounded-[4px] px-4 ${
+      testType === "mock"
+        ? "bg-[#eef3ff] text-[#4f73df]"
+        : "text-[#98a2b3]"
+    }`}
+  >
+    Mock Test
+  </button>
+</div>
 
         <div className="grid grid-cols-1 gap-x-10 gap-y-5 md:grid-cols-2">
           <Field label="Subject">

@@ -6,6 +6,7 @@ import { EditTestPage } from "../pages/EditTestPage";
 import { LoginPage } from "../pages/LoginPage";
 import { PreviewPublishPage } from "../pages/PreviewPublishPage";
 import { QuestionBuilderPage } from "../pages/QuestionBuilderPage";
+import { TestTrackingPage } from "../pages/TestTrackingPage";
 
 function ProtectedRoute() {
   const token = localStorage.getItem("preproute_token");
@@ -29,6 +30,7 @@ export function AppRoutes() {
         <Route path="/tests/:id/edit" element={<EditTestPage />} />
         <Route path="/tests/:id/questions" element={<QuestionBuilderPage />} />
         <Route path="/tests/:id/preview" element={<PreviewPublishPage />} />
+        <Route path="/tracking" element={<TestTrackingPage />} />
       </Route>
     </Routes>
   );
