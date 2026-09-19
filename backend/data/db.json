@@ -1,0 +1,212 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "userId": "admin",
+      "password": "$2a$10$SLA8weRBtTaMSia7jTKBROlmi8qpvTQaRjGU8dltzH0PeyZybnwga",
+      "name": "Admin"
+    }
+  ],
+  "subjects": [
+    {
+      "id": "s1",
+      "name": "Quantitative Aptitude"
+    },
+    {
+      "id": "s2",
+      "name": "Logical Reasoning"
+    },
+    {
+      "id": "s3",
+      "name": "Verbal Ability"
+    }
+  ],
+  "topics": [
+    {
+      "id": "t1",
+      "subjectId": "s1",
+      "name": "Number System"
+    },
+    {
+      "id": "t2",
+      "subjectId": "s1",
+      "name": "Percentages & Profit-Loss"
+    },
+    {
+      "id": "t3",
+      "subjectId": "s2",
+      "name": "Puzzles"
+    },
+    {
+      "id": "t4",
+      "subjectId": "s2",
+      "name": "Blood Relations"
+    },
+    {
+      "id": "t5",
+      "subjectId": "s3",
+      "name": "Reading Comprehension"
+    }
+  ],
+  "subTopics": [
+    {
+      "id": "st1",
+      "topicId": "t1",
+      "name": "HCF & LCM"
+    },
+    {
+      "id": "st2",
+      "topicId": "t1",
+      "name": "Divisibility Rules"
+    },
+    {
+      "id": "st3",
+      "topicId": "t2",
+      "name": "Simple & Compound Interest"
+    }
+  ],
+  "tests": [
+    {
+      "id": "test_1789441456245",
+      "status": "live",
+      "questionIds": [],
+      "name": "Test",
+      "type": "chapterwise",
+      "subject": "s2",
+      "topics": [
+        "t4"
+      ],
+      "sub_topics": [],
+      "correct_marks": 5,
+      "wrong_marks": -1,
+      "unattempt_marks": 0,
+      "difficulty": "easy",
+      "total_time": 10,
+      "total_marks": 5,
+      "total_questions": 1,
+      "questions": [
+        "q_1789441473789_0"
+      ]
+    },
+    {
+      "id": "test_1789441831958",
+      "status": "live",
+      "questionIds": [],
+      "name": "Logical Reasoning Test",
+      "type": "chapterwise",
+      "subject": "s2",
+      "topics": [
+        "t3"
+      ],
+      "sub_topics": [],
+      "correct_marks": 5,
+      "wrong_marks": -1,
+      "unattempt_marks": 0,
+      "difficulty": "easy",
+      "total_time": 10,
+      "total_marks": 5,
+      "total_questions": 1,
+      "created_at": "2026-09-15T03:10:31.958Z",
+      "questions": [
+        "q_1789441852104_0"
+      ]
+    },
+    {
+      "id": "test_1789478357348",
+      "status": "live",
+      "questionIds": [],
+      "name": "Quant",
+      "type": "chapterwise",
+      "subject": "s1",
+      "topics": [
+        "t1"
+      ],
+      "sub_topics": [
+        "st1"
+      ],
+      "correct_marks": 5,
+      "wrong_marks": -1,
+      "unattempt_marks": 0,
+      "difficulty": "medium",
+      "total_time": 10,
+      "total_marks": 5,
+      "total_questions": 1,
+      "created_at": "2026-09-15T13:19:17.348Z",
+      "questions": [
+        "q_1789478381326_0"
+      ]
+    },
+    {
+      "id": "test_1789801473986",
+      "status": "draft",
+      "questionIds": [],
+      "name": "Class-8th",
+      "type": "chapterwise",
+      "subject": "s1",
+      "topics": [
+        "t2"
+      ],
+      "sub_topics": [
+        "st3"
+      ],
+      "correct_marks": 10,
+      "wrong_marks": -2,
+      "unattempt_marks": 0,
+      "difficulty": "medium",
+      "total_time": 20,
+      "total_marks": 20,
+      "total_questions": 2,
+      "created_at": "2026-09-19T07:04:33.986Z"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q_1789441473789_0",
+      "type": "mcq",
+      "question": "xsxsaxasx",
+      "option1": "xaxxz",
+      "option2": "xasxas",
+      "option3": "xsxa",
+      "option4": "ass",
+      "correct_option": "option1",
+      "explanation": "ass",
+      "difficulty": "easy",
+      "test_id": "test_1789441456245",
+      "subject": "s2",
+      "topic": "t4",
+      "sub_topic": ""
+    },
+    {
+      "id": "q_1789441852104_0",
+      "type": "mcq",
+      "question": "ldwdx",
+      "option1": "ssssd",
+      "option2": "cssdc",
+      "option3": "csdsc",
+      "option4": "cd",
+      "correct_option": "option4",
+      "explanation": "cd",
+      "difficulty": "easy",
+      "test_id": "test_1789441831958",
+      "subject": "Logical Reasoning",
+      "topic": "Puzzles",
+      "sub_topic": ""
+    },
+    {
+      "id": "q_1789478381326_0",
+      "type": "mcq",
+      "question": "2+3",
+      "option1": "1",
+      "option2": "2",
+      "option3": "5",
+      "option4": "6",
+      "correct_option": "option3",
+      "explanation": "5",
+      "difficulty": "medium",
+      "test_id": "test_1789478357348",
+      "subject": "Quantitative Aptitude",
+      "topic": "Number System",
+      "sub_topic": "st1"
+    }
+  ]
+}
